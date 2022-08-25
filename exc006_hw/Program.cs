@@ -5,3 +5,14 @@
 // [1, 2, 3, 6, 2] -> 0
 // [10, 11, 12, 13, 14] -> 5
 
+int[] array = new int[123];
+
+int count = 0;
+for (int i = 0; i < array.Length; i++){
+    array[i] = new Random().Next(0, 151);
+    if (array[i] >= 10 && array[i] <= 99){
+        count++;
+    }
+}
+
+Console.Write($"{count} numbers in range [10; 99] in the array");
