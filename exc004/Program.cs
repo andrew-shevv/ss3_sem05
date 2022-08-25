@@ -13,11 +13,12 @@ for (int i = 0; i < array.Length; i++){
 int[] arrMult = new int[array.Length / 2 + array.Length % 2];
 
 for (int i = 0; i < arrMult.Length; i++){
-    if (array[i] == array[array.Length - i - 1]){
+    int iRev = array.Length - i - 1;
+    if (i == iRev){
         arrMult[i] = array[i];
     }
     else {
-        arrMult[i] = array[i] * array[array.Length - i - 1];
+        arrMult[i] = array[i] * array[iRev];
     }
 }
 
