@@ -21,8 +21,5 @@ for (int i = 0; i < array.Length; i++){
     }
 }
 
-Console.WriteLine(
-    '[' + string.Join(", ", array) + ']'
-    + $"\nsum of positive numbers = {sumPos}" 
-    + $"\nsum of negative numbers = {sumNeg}"
-);
+Console.Write('[' + string.Join(", ", array) + ']');
+Console.Write($"\nsum of positive numbers = {sumPos} \nsum of negative numbers = {sumNeg}");
