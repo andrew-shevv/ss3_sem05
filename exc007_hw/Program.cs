@@ -4,10 +4,11 @@
 // [-4, -6, 89, 6] -> 0
 
 int[] array = new int[new Random().Next(3, 10)];
+Random rand = new Random();
 
 int sumOdd = 0;
 for (int i = 0; i < array.Length; i++){
-    array[i] = new Random().Next(-99, 100);
+    array[i] = rand.Next(-99, 100);
     if (i % 2 != 0){
         sumOdd += array[i];
     }

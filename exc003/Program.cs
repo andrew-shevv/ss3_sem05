@@ -4,9 +4,10 @@
 // -3; массив [6, 7, 19, 345, 3] -> да
 
 int[] array = new int[5];
+Random rand = new Random();
 
 for (int i = 0; i < array.Length; i++){
-    array[i] = new Random().Next(-99, 100);
+    array[i] = rand.Next(-99, 100);
 }
 
 Console.WriteLine('[' + string.Join(", ", array) + ']');

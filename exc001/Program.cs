@@ -5,7 +5,6 @@
 // сумма положительных чисел равна 29, сумма отрицательных равна -20.
 
 int[] array = new int[12];
-
 Random rand = new Random();
 
 int sumPos = 0;

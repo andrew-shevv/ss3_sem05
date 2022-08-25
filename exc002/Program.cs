@@ -3,9 +3,10 @@
 // [-4, -8, 8, 2] -> [4, 8, -8, -2]
 
 int[] array = new int[5];
+Random rand = new Random();
 
 for (int i = 0; i < array.Length; i++){
-    array[i] = new Random().Next(-9, 10);
+    array[i] = rand.Next(-9, 10);
 }
 
 Console.Write('[' + string.Join(", ", array) + ']' + " ==> ");

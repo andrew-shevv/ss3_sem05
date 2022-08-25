@@ -5,9 +5,10 @@
 // [6 7 3 6] -> 36 21
 
 int[] array = new int[new Random().Next(3, 10)];
+Random rand = new Random();
 
 for (int i = 0; i < array.Length; i++){
-    array[i] = new Random().Next(1, 10);
+    array[i] = rand.Next(1, 10);
 }
 
 int[] arrMult = new int[array.Length / 2 + array.Length % 2];
