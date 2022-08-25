@@ -6,13 +6,12 @@
 
 int[] array = new int[12];
 
-for (int i = 0; i < array.Length; i++){
-    array[i] = new Random().Next(-9, 10);
-}
+Random rand = new Random();
 
 int sumPos = 0;
 int sumNeg = 0;
 for (int i = 0; i < array.Length; i++){
+    array[i] = rand.Next(-9, 10);
     if (array[i] > 0){
         sumPos += array[i];
     }
@@ -21,5 +20,5 @@ for (int i = 0; i < array.Length; i++){
     }
 }
 
-Console.Write('[' + string.Join(", ", array) + ']');
-Console.Write($"\nsum of positive numbers = {sumPos} \nsum of negative numbers = {sumNeg}");
+Console.WriteLine('[' + string.Join(", ", array) + ']');
+Console.Write($"sum of positive numbers = {sumPos} \nsum of negative numbers = {sumNeg}");
